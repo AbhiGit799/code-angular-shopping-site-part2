@@ -1,0 +1,113 @@
+<div style="text-align: center;">
+
+  <br/>
+  <h2> {{ name }} - Shopping Site Part-2 </h2>
+  <br/><br/>
+
+
+  <table  style="margin-left: auto; margin-right: auto;" >
+
+    <tr>
+      <td> 
+        <b> ngx-bar-rating </b>
+      </td>
+      
+      <td>
+      <b>  Examples </b>
+      </td>
+
+    </tr>
+
+    <tr>
+      
+    <td>
+      <bar-rating></bar-rating>
+    </td>
+
+    <td>
+      <bar-rating theme="square"></bar-rating>
+    </td>
+     
+      
+    </tr>
+
+
+    <tr>
+      <td>
+        <bar-rating class="bar" theme="horizontal"></bar-rating>
+      </td>
+      <td>
+        <bar-rating class="bar" theme="vertical"></bar-rating>
+      </td>
+    </tr>
+
+
+
+    <tr>
+
+      <td>
+        <bar-rating class="bar" theme="movie"></bar-rating> 
+      </td>
+
+      <td>
+       <bar-rating class="bar" theme="movie"></bar-rating>
+      </td>
+
+    </tr>
+
+
+  </table>
+     
+<br><br>
+
+<h3 style="color: black;">Angular Slick Carousel Example </h3>
+
+<br><br>
+
+<ngx-slick-carousel class="carousel" 
+  #slickModal="slick-carousel" 
+  [config]="slideConfig" 
+  (init)="slickInit($event)"
+  (breakpoint)="breakpoint($event)"
+  (afterChange)="afterChange($event)"
+  (beforeChange)="beforeChange($event)">
+
+<div ngxSlickItem *ngFor="let slide of slides" class="slide">
+<img src="{{ slide.img }}" alt="" width="100%">
+</div>
+
+</ngx-slick-carousel>
+
+
+<br><br>
+
+<ngx-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ngx-slider>
+
+
+<br><br>
+
+<b> <p>{{'topbar-title' | translate}}</p> </b>
+
+&nbsp;&nbsp;
+
+<b><p>{{'call-us' | translate}}</p></b>
+
+
+
+<button class="btn btn-dark" (click)="changeLang('en')" >English</button> &nbsp;&nbsp;
+
+<button class="btn btn-info" (click)="changeLang('hi')">Hindi</button>
+
+<br><br>
+
+
+
+
+<br><br><br>
+
+
+ 
+</div>
+  
+
+<router-outlet></router-outlet>

@@ -1,0 +1,30 @@
+@import 'scss/theme.scss';
+@import 'css/themify-icons.css';
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/font-awesome/scss/font-awesome.scss';
+
+
+@import '~ngx-toastr/toastr.css';
+
+
+@import "node_modules/ngx-bar-rating/themes/br-default-theme.scss";
+@import "node_modules/ngx-bar-rating/themes/br-horizontal-theme.scss";
+@import "node_modules/ngx-bar-rating/themes/br-vertical-theme.scss";
+@import "node_modules/ngx-bar-rating/themes/br-movie-theme.scss";
+@import "node_modules/ngx-bar-rating/themes/br-square-theme.scss";
+
+.slick-slider {
+    width: 88%;
+    margin: auto;
+    background: rgb(14, 13, 13);
+  }
+  
+body .slick-prev, 
+body .slick-next {
+    height: 45px;
+    width: 40px;
+    background: grey !important;
+    z-index: 100;
+}
+
